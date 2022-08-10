@@ -35,7 +35,7 @@ struct ContentView: View {
             
             Spacer()
             
-            VStack(spacing: 50) {
+            VStack(spacing: 40) {
                 
                 Text("Score: \(appScore)")
                     .font(.largeTitle.bold())
@@ -75,6 +75,8 @@ struct ContentView: View {
                 appScore = 0
             }
             .font(.largeTitle.bold())
+            
+            Spacer()
             
         }.alert(alertTitle, isPresented: $showAlert) {
             Button("Continue") {
